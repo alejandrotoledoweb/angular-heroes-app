@@ -9,6 +9,9 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -17,14 +20,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     LayoutPageComponent,
     ListPageComponent,
     NewPageComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    ConfirmDialogComponent,
+    HeroImagePipe,
+    CardComponent
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
     MaterialModule,
 
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class HeroesModule { }
